@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bs.iml" filepath="$PROJECT_DIR$/.idea/bs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-common/travel-common.iml" filepath="$PROJECT_DIR$/travel-common/travel-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-parent/travel-parent.iml" filepath="$PROJECT_DIR$/travel-parent/travel-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-project/travel-project.iml" filepath="$PROJECT_DIR$/travel-project/travel-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-project/travel-project-dao/travel-project-dao.iml" filepath="$PROJECT_DIR$/travel-project/travel-project-dao/travel-project-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-project/travel-project-pojo/travel-project-pojo.iml" filepath="$PROJECT_DIR$/travel-project/travel-project-pojo/travel-project-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-project/travel-project-service/travel-project-service.iml" filepath="$PROJECT_DIR$/travel-project/travel-project-service/travel-project-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-project/travel-project-web/travel-project-web.iml" filepath="$PROJECT_DIR$/travel-project/travel-project-web/travel-project-web.iml" />
+    </modules>
+  </component>
+</project>

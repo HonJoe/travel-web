@@ -1,0 +1,12 @@
+com\zzh\entity\Product.class
+com\zzh\entity\ProductDesc.class
+com\zzh\entity\Customization.class
+com\zzh\entity\Area.class
+com\zzh\entity\EmailValidate.class
+com\zzh\vo\OrderList.class
+com\zzh\vo\PriceCalendar.class
+com\zzh\entity\ProductOrder.class
+com\zzh\entity\Theme.class
+com\zzh\entity\ThemeProduct.class
+com\zzh\entity\ProductSell.class
+com\zzh\entity\User.class

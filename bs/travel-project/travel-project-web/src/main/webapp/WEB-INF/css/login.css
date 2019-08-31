@@ -1,0 +1,76 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+#contanier{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/login01.jpg") ;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logincontainer{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-top: 20px;
+}
+.form-group{
+    margin-bottom: 5px;
+}
+.loginbox{
+    width: 340px;
+    height: 340px;
+    position:absolute;
+    left: 50%;
+    top:50%;
+    margin:-200px 0 0 -170px;
+    padding: 5px;
+    background-color: #F7F3FA;
+}
+
+.loginbox .yanzhen{
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+}
+.form-group-contanier{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.loginbox .yanzhenoption{
+    position: absolute;
+    top:0;
+    margin-left: 10px;
+    padding: 0;
+    display: inline-block;
+    width: 40%;
+
+}
+.loginbox .yanzhenimg img{
+    height: 100%;
+    width: auto;
+}
+.messagebox{
+    height: 12px;
+    margin-top: 5px;
+    line-height: 10px;
+    font-size: 10px;
+    vertical-align:middle;/*表单控件上下居中对齐*/
+}
+.modal-dialog{
+    width: 360px;
+}
+
+.fpsd{
+    margin: 0;
+    width: 100%;;
+    line-height: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+

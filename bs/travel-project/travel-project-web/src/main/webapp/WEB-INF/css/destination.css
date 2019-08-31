@@ -1,0 +1,442 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+    text-align: center;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.containers {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+#Carousels {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#clause {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: black;
+    height: 300px;
+}
+
+/*导航条*/
+.navigation ul li {
+    list-style-type: none;
+    cursor: pointer;
+    float: left;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.navigation_item {
+    width: 60px;
+    float: right;
+    height: 60px;
+    text-align: center;
+}
+
+.nav_item2, .nav_item3 {
+    width: 80px;
+}
+
+.nav_item4 {
+    width: 100px;
+}
+
+.reg, .login {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.reg:hover {
+    color: #fd7a06;
+}
+
+.login:hover {
+    color: #fd7a06;
+}
+
+/*轮播图片*/
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#searchBox {
+    z-index: 9999;
+    position: absolute;
+    width: 600px;
+    height: 130px;
+    left: 400px;
+    top: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#radioGroup {
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    padding: 10px 5px 5px 0px;
+    text-align: center;
+}
+
+#radioGroup span {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#radioGroup span input {
+    margin-right: 5px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+#input_Group {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+}
+
+#input_Group ul {
+    padding: 0;
+    overflow: hidden;
+}
+
+#input_Group ul li {
+    display: none;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+#input_Group ul li input {
+    border-radius: 7px;
+    width: 500px;
+    height: 40px;
+}
+
+#input_Group ul li .indexIcon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 52px;
+    margin-right: 10px;
+    float: right;
+    /*background: url("images/search.png");*/
+    background-image: url("../images/search.png");
+    cursor: pointer;
+}
+
+#input_Group ul li.show {
+    display: block;
+}
+
+/*全部目的地*/
+
+.allplace{
+    padding-bottom: 50px;
+}
+
+.allplace .allplaceContent {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.allplace .allplaceContent ul li {
+    float: left;
+    width: 33.3%;
+}
+
+.allplace .allplaceContent .allplaceTitle {
+    position: relative;
+    width: 50%;
+    margin: 0 auto
+}
+
+.allplace .allplaceContent .allplaceTitle .allplaceItem {
+    margin-left: 18%;
+    font-size: 18px;
+    color: #333;
+}
+
+.allplace .allplaceContent .allplaceTitle .allplaceItem:hover {
+    color: #ff9d00;
+    text-decoration: none;
+    border-bottom: 2px solid #ff9d00;
+}
+
+/**/
+.allplace .allplaceContent .contentItemLeft {
+    width: 45%;
+    padding-left: 19%;
+    padding-right: 2%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.allplace .allplaceContent .contentItemRight {
+    width: 45%;
+    padding-left: 12%;
+    padding-right: 3%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+}
+
+.place {
+    margin-top: 20px;
+    float: left;
+}
+
+.mark {
+    font-size: 24px;
+}
+
+.type {
+    color: #666;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.markreCommend {
+    color: #d58512;
+}
+
+.markAround {
+    color: red;
+}
+
+.markCountry {
+    color: #2aabd2;
+}
+
+.markFree {
+    color: #1eb450;
+}
+
+.spot {
+    margin-top: 10px;
+    width: 100%;
+    float: right;
+    height: 40px;
+    text-align: left;
+}
+
+.spot a {
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    word-spacing: 2px;
+    margin-right: 7px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.destinationContainer{
+    background: #fafafa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #e4e4e4;
+}
+
+.destination {
+
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding: 0;
+}
+
+.destination .iconContainer img {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.iconContainer{
+    width:100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.destinationicon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    line-height: 100%;
+    text-align: center;
+}
+
+.destinationicon:hover {
+    background: #000000;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+.destinationicon .text {
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+#footer {
+    clear: both;
+    background-color: #3c3c3c;
+    color: #c2c2c2;
+    line-height: 22px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+
+#footer .ft-content {
+    width: 80%;
+    left:10%;
+    margin: 0 auto;
+}
+
+#footer .ft-info-col {
+    float: left;
+    display: inline;
+}
+
+#footer .ft-info-about {
+    margin-top: 30px;
+    width: 128px;
+    margin-left: 85px;
+}
+
+#footer .ft-info-service {
+    width: 135px;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+
+dl {
+    display: inline-block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#footer .ft-info dt {
+    height: 30px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+
+#footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer a {
+    color: #c2c2c2;
+    cursor: pointer;
+}
+a:hover {
+    outline: 0;
+    text-decoration: underline;
+    color: #ff8a00;
+}
+
+
+#footer .ft-info-qrcode {
+    float: right;
+    padding-top: 22px;
+    line-height: 1.4em;
+}
+
+#footer .ft-info-qrcode dd {
+    width: 100px;
+    display: inline;
+    margin-left: 30px;
+    float: right;
+    text-align: center;
+}
+
+
+#footer .ft-info-qrcode span {
+    display: block;
+    height: 90px;
+    margin: 0 0 8px 6px;
+}
+#footer .ft-qrcode-tejia {
+    background: url(../images/sina.png) no-repeat;
+}
+
+#footer .ft-qrcode-weixin{
+    background: url(../images/wechat.png) no-repeat;
+}

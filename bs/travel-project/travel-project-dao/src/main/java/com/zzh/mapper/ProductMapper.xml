@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.dao.ProductMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zzh.entity.Product">
+        <id column="pid" property="pid" />
+        <result column="title" property="title" />
+        <result column="price" property="price" />
+        <result column="main_image" property="mainImage" />
+        <result column="sub_images" property="subImages" />
+        <result column="sell" property="sell" />
+        <result column="status" property="status" />
+        <result column="active_num" property="activeNum" />
+        <result column="active_days" property="activeDays" />
+        <result column="start_areaId" property="startAreaid" />
+        <result column="end_areaId" property="endAreaid" />
+        <result column="start_areaName" property="startAreaname" />
+        <result column="end_areaName" property="endAreaname" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        pid, title, price, main_image, sub_images, status, active_num, active_days, start_areaId, end_areaId, start_areaName, end_areaName, create_time, update_time
+    </sql>
+
+</mapper>

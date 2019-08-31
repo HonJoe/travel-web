@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="travel-common" />
+        <module name="travel-project-dao" />
+        <module name="travel-project-pojo" />
+        <module name="travel-project-service" />
+        <module name="travel-project-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mpgenerator" target="1.5" />
+      <module name="travel-common" target="1.7" />
+      <module name="travel-parent" target="1.7" />
+      <module name="travel-project" target="1.7" />
+      <module name="travel-project-dao" target="1.7" />
+      <module name="travel-project-pojo" target="1.7" />
+      <module name="travel-project-service" target="1.7" />
+      <module name="travel-project-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

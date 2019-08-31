@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	
+	
+	<!-- 加载配置文件 -->
+	<context:property-placeholder location="classpath:properties/*.properties" />
+	<!-- 数据库连接池 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		destroy-method="close">
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="maxActive" value="10" />
+		<property name="minIdle" value="5" />
+	</bean>
+
+	<!--
+		整合Mybatis
+		目的：
+			1、Spring管理所有组件，mapper的实现类
+			2、Spring用来管理事物
+	-->
+	<!-- 创建出sqlSessionFactory对象 -->
+	<!--
+		MyBatis提供的：org.mybatis.spring.SqlSessionFactoryBean
+		MP提供的：com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean
+	 -->
+	<bean id="sqlSessionFactoryBean" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
+		<!-- 数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- configLocation指定全局配置文件的位置 -->
+		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+		<!-- 别名处理 -->
+		<property name="typeAliasesPackage" value="com.zzh.entity"></property>
+		<!-- 注入全局的MP策略配置 -->
+		<property name="globalConfig" ref="globalConfiguration"></property>
+		<!-- 插件注册 -->
+		<property name="plugins">
+			<list>
+				<!-- 注入分页插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.PaginationInterceptor"></bean>
+				<!-- 注入执行分析插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.SqlExplainInterceptor">
+					<property name="stopProceed" value="true"></property>
+				</bean>
+				<!-- 注册性能分析插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.PerformanceInterceptor">
+					<property name="format" value="true"></property>
+				</bean>
+				<!-- 注册乐观锁插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor"></bean>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 定义MyBatisPlus的全局策略配置 -->
+	<bean id="globalConfiguration" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
+		<!-- 在2.3版本以后，dbColumnUnderline默认值就是true -->
+		<property name="dbColumnUnderline" value="true"></property>
+		<!-- 全局的主键策略,0表示AUTO -->
+	<!--<property name="idType" value="3"></property>-->
+</bean>
+
+<!-- Mapper映射文件的包扫描器 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.zzh.dao" />
+	</bean>
+	
+</beans>

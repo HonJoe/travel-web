@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.orage{
+    color: #fd7a06;
+    margin-top:50px;
+
+}
+/*.orage .section_title {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fd7a06;
+    position: relative;
+    margin-bottom: 6px;
+}
+.orage .more {
+    color: #959595;
+    font-size: 12px;
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    line-height: normal;
+}*/
+.orage .activecontent{
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.orage .activecontent .leftcontent{
+    width: 30%;
+    height: 99%;
+    float: left;
+    overflow: hidden;
+
+}
+.orage .activecontent .rightcontent{
+    width: 70%;
+    height: 99%;
+    float: right;
+
+    overflow: hidden;
+}
+.orage .activecontent .leftcontent .cate_title {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 14px;
+
+}
+.leftcontent .hotplance{
+    padding: 0 10px 22px 0;
+}
+.leftcontent .hotplance a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #767676;
+    font-size: 12px;
+    margin-bottom: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.leftcontent a:hover{
+    background-color: #fd7a06;
+    color: #FFFFFF;
+}
+.leftcontent .actives {
+    background-color: #fd7a06;
+    font-ccolor: #FFFFFF;
+}
+.activecontent .rightcontent .bigimg{
+    overflow: hidden;
+    padding-top: 15px;
+
+    width: 49%;
+    height: 99%;
+    float: left;
+
+}
+.rightcontent .bigimg .a_img{
+    margin-top: 20px;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+
+}
+.rightcontent .bigimg .a_img img{
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+}
+.imgmsg{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+.rightcontent .smallimg{
+    width: 50%;
+    height: 99%;
+    overflow: hidden;
+    background-color: white;
+    float: right;
+    padding-top: 25px;
+}
+.thumbnail{
+    margin-bottom: 5px;
+}
+.op_img img {
+    transition: transform 0.3s ease 0s;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.classicon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.classicon:hover{
+    background: #000000;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    -webkit-transition:opacity 0.5s ;
+}
+
+.classicon .text{
+    margin: 0 auto;
+    margin-top: 120px;
+}

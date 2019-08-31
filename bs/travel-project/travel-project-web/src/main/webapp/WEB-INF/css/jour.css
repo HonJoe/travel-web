@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 900px;
+}
+/**/
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.containers {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    border-radius: 0px;
+}
+
+.thumbnail:hover {
+    border-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+#Carousels {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.like{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content {
+    padding-top: 50px;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#themeTour {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+#clause {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: black;
+    height: 300px;
+}
+
+.section_title {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fd7a06;
+    position: relative;
+    margin-bottom: 6px;
+    text-align: left;
+    color: #fd7a06;
+}
+
+.more {
+    color: #959595;
+    font-size: 12px;
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    line-height: normal;
+}
+
+/*导航条*/
+.navigation ul li {
+    list-style-type: none;
+    cursor: pointer;
+    float: left;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.navigation_item {
+    width: 60px;
+    float: right;
+    height: 60px;
+    text-align: center;
+}
+
+.navigation_style {
+    color: #fff;
+}
+
+.nav_item2, .nav_item3 {
+    width: 80px;
+}
+
+.nav_item4 {
+    width: 100px;
+}
+
+.activity {
+    color: #fff;
+}
+.carousel-inner img{
+    width: 100%;
+}
+.reg, .login{
+    display: inline-block;
+    width: 30px;
+    height:60px;
+    cursor: pointer;
+}
+
+.reg:hover{
+    color: #fd7a06;
+}
+
+.login:hover{
+    color: #fd7a06;
+}
+
+/*轮播图片*/
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 1349px;
+    overflow: hidden;
+}
+/**/
+.jourcontaniner{
+    width: 80%;
+    min-width: 800px;
+    max-width: 1078px;
+}
+.Jbanner{
+    width: 100%;
+    height: 360px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+#Jourbanner{
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-image: url("../images/jour01.jpg");
+
+}
+ .seting {
+    line-height: 36px;
+    height: 75px;
+     overflow: hidden;
+}
+ .seting .sort {
+    float: left;
+    font-size: 14px;
+    color: #d7d7d7;
+}
+.seting .sort a{
+    margin: 0 5px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    color: #ccc;
+    cursor: default
+}
+.seting .sort a:hover{
+    color: #0073b6;cursor: pointer;
+}
+.seting .search {
+    /*float: right;*/
+
+}
+.seting .search .jour_input {
+   /* float: left;*/
+    height: 30px;
+    line-height: normal;
+    width: 120px;
+    /*
+    padding-left: 30px;
+    */
+    /*background: url(../images/plan_search_icon.png) 10px center no-repeat #fff;*/
+    vertical-align: middle;
+}
+.journeydiv{
+    margin-top: 25px;
+}
+.thumbnail {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    overflow: hidden;
+}
+.thumbnail img{
+    width: 100%;
+}
+.row a{
+    text-decoration: none;
+}
+.row a:visited{
+    color: #000000;
+}
+.jourcontaniner .jourtitle {
+    position: absolute;
+    left: 10px;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    height: 50px;
+}
+.jourcontaniner .jourtitle .day {
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    height: 42px;
+    border-right: 1px solid #b1b1b1;
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+.jourcontaniner .jourtitle .day strong {
+    font-size: 50px;
+    font-family: HelveticaNeue-Light;
+    padding-right: 5px;
+    height: 42px;
+    display: inline-block;
+    line-height: 42px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+.journeydiv .jourimg{
+    position: relative;
+    overflow: hidden;
+}
+.journeydiv .jourimg img{
+    cursor: pointer;
+    transition: all 1.2s;
+}
+.journeydiv .jourimg img:hover{
+    transform: scale(1.2);
+}
+.journeydiv dl {
+    overflow: hidden;
+    zoom: 1;
+    font-size: 12px;
+}
+.journeydiv dl dd {
+    line-height: 24px;
+    font-size: 16px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.journeydiv .about{
+    width: 100%;
+
+}
+.journeydiv .caption a:link{
+    color: #000000;
+}
+.journeydiv .caption a:hover{
+    color: #00a2d4;
+}
+
+.journeydiv .about .name {
+    font-family: tahoma;
+    left: 15px;
+    bottom: 11px;
+    padding-left: 18px;
+    background: url(../images/icon_names.png) 0 center no-repeat;
+}
+.journeydiv .about .icon1 {
+    background: url(../images/icon_copys.png) 0 center no-repeat;
+    padding-left: 18px;
+    bottom: 11px;
+}
+.journeydiv .about.icon2 {
+    background: url(../images/icon_pois.png) 0 center no-repeat;
+    padding-left: 20px;
+}

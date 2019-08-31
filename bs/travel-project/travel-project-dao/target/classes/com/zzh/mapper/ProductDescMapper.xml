@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.dao.ProductDescMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zzh.entity.ProductDesc">
+        <id column="pid" property="pid" />
+        <result column="scenic_desc" property="scenicDesc" />
+        <result column="trip_desc" property="tripDesc" />
+        <result column="cost_desc" property="costDesc" />
+        <result column="other_desc" property="otherDesc" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        pid, scenic_desc, trip_desc, cost_desc, other_desc
+    </sql>
+
+</mapper>

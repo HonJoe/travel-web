@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+.relative {
+    position: relative;
+}
+.shaixuan-tj{
+	font-size: 14px;
+}
+.shaixuan-tj span , .shaixuan-tj i {
+	margin: 10px 5px 10px 0; 
+	float: left;
+	line-height: 28px;
+	height: 28px;
+}
+.border {
+    border: 1px #ddd solid;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.shaixuan-tj span.crumb-select-item{
+	position: relative;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #DDD;
+    font-size: 12px;
+    vertical-align: top;
+    padding: 0 32px 0 4px;
+    cursor: pointer;
+    background: #f3f3f3;
+}
+.shaixuan-tj span.crumb-select-item i{
+	float: none;
+	margin: 0;
+    display: block;
+    position: absolute;
+    width: 25px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    right: 0;
+    top: 0;
+}
+.shaixuan-tj span.crumb-select-item em , .shaixuan-tj span.crumb-select-item i{
+    color: #e4393c;
+}
+.shaixuan-tj span.crumb-select-itemon{
+	border-color: #e4393c;
+}
+.shaixuan-tj span.crumb-select-itemon i{
+	background: #e4393c;
+	color: #fff;
+}.shaixuan-tj a:hover{
+	color: inherit;
+}
+.shaixuan-btn{
+	float: right;
+	width: 105px;
+}
+.shaixuan-btn span{
+	display: block;
+	float: right;
+	border: 1px solid #e8e8e8;
+	height: 34px;
+	width: 103px;
+	line-height: 34px;
+	margin: 6px 0;
+	background: #f6f6f6;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	cursor: pointer;
+}
+.shaixuan-btn span i{
+	font-size: 18px;
+	color: #666;
+	margin-left: 5px;
+}
+.search-by{
+	padding: 0 20px;
+	width: 906px;
+}
+.search-by dl{
+	width: 906px;
+	padding: 10px 0;
+	line-height: 30px;
+	border-bottom: 1px dotted #CCC;
+    overflow: hidden;
+}
+.search-by dl dt a{
+	font-weight: inherit;
+	color: #666;
+	line-height: 30px;
+}
+.search-by dl dt{
+	width: 82px;
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+}
+.search-by dl dd a{
+	color: #333;
+	font-size: 14px;
+	line-height: 30px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.search-by dl dd{
+	width: 754px;
+	font-size: 14px;
+	height: 30px;
+	overflow: hidden;
+}
+.search-by dl dd.show-more{
+	width: 70px;
+	padding: 0;
+	text-align: right;
+	cursor: pointer;
+}
+.search-by dl dd.show-more h3{
+	background: none;
+	border: none;
+	font-size: 14px;
+	line-height: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+.search-by dl dd.show-more h3 i{
+	background: none;
+	float: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 5px;
+}

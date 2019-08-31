@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.dao.ThemeMapper">
+
+    <!-- 开启二级缓存 -->
+    <!--<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zzh.entity.Theme">
+        <id column="id" property="id" />
+        <result column="theme_name" property="themeName" />
+        <result column="image_url" property="imageUrl" />
+        <result column="detail" property="detail" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, theme_name, image_url, detail
+    </sql>
+
+    <select id="listorderBythemeName" resultType="java.util.HashMap">
+        SELECT COUNT(1) as num ,theme_name FROM theme_product GROUP BY theme_name ORDER BY num DESC;
+    </select>
+
+</mapper>

@@ -1,0 +1,102 @@
+﻿.demo-box{
+	width: 450px;
+	overflow: hidden;
+	background: #EEF5FD;
+	border: 1px solid #E6E8EB;
+}
+/*******单独组件样式********/
+.calendar-box *{
+	box-sizing: border-box;
+}
+.ht-rili-head{
+	overflow: hidden;
+}
+.ht-rili-querybox{
+	overflow: hidden;
+}
+.ht-rili-title{
+	padding: 10px;
+	display: inline-block;
+	max-width: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.ht-rili-datebox{
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+}
+.ht-rili-date{
+	text-align: center;
+	display: inline-block;
+	width: 100px;
+	height: 19px;
+	line-height: 19px;
+	vertical-align: middle;
+}
+.ht-rili-leftarr{
+	display: inline-block;
+	width:25px;
+	height: 19px;
+	background: url("../images/left-arr.png") left center no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ht-rili-rightarr{
+	display: inline-block;
+	width:25px;
+	height: 19px;
+	background: url("../images/right-arr.png") right center no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ht-rili-th{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	/*background: #E66B14;*/
+	color: #000;
+}
+.ht-rili-td{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height:50px;
+	/*line-height: 50px;*/
+	background: #EEF5FD;
+	padding-top: 5px;
+	/*border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;*/
+	cursor: pointer;
+}
+.ht-rili-body{
+	overflow: hidden;
+}
+.ht-rili-day{
+	font-family:Arial;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	width: 100%;
+}
+.ht-rili-money{
+	font-family:Arial;
+	display: inline-block;
+	width: 100%;
+	font-size: 12px;
+	color: #D4585A
+}
+.ht-rili-td-disabled{
+	color: #BFC4CA;
+}
+.ht-rili-td-active{
+	border-radius: 4px;
+	background: #80B3E8;
+}

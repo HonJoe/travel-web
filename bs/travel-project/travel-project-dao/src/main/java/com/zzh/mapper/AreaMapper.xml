@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.dao.AreaMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zzh.entity.Area">
+        <id column="areaId" property="areaId" />
+        <result column="areaCode" property="areaCode" />
+        <result column="areaName" property="areaName" />
+        <result column="level" property="level" />
+        <result column="cityCode" property="cityCode" />
+        <result column="center" property="center" />
+        <result column="parentId" property="parentId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        areaId, areaCode, areaName, level, cityCode, center, parentId
+    </sql>
+
+</mapper>

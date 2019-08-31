@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.dao.CustomizationMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zzh.entity.Customization">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="start_areaName" property="startAreaname" />
+        <result column="end_areaName" property="endAreaname" />
+        <result column="start_date" property="startDate" />
+        <result column="days" property="days" />
+        <result column="number" property="number" />
+        <result column="percapita_consumption" property="percapitaConsumption" />
+        <result column="person_name" property="personName" />
+        <result column="phone" property="phone" />
+        <result column="remarks" property="remarks" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, start_areaName, end_areaName, start_date, days, number, percapita_consumption, person_name, phone, remarks, status
+    </sql>
+
+</mapper>

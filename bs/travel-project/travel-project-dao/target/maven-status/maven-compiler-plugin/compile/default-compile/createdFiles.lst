@@ -1,0 +1,10 @@
+com\zzh\dao\ProductSellMapper.class
+com\zzh\dao\ThemeProductMapper.class
+com\zzh\dao\CustomizationMapper.class
+com\zzh\dao\ProductDescMapper.class
+com\zzh\dao\ThemeMapper.class
+com\zzh\dao\UserMapper.class
+com\zzh\dao\EmailValidateMapper.class
+com\zzh\dao\ProductOrderMapper.class
+com\zzh\dao\ProductMapper.class
+com\zzh\dao\AreaMapper.class
