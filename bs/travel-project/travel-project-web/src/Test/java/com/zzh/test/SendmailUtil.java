@@ -12,10 +12,10 @@ public class SendmailUtil {
     // QQ邮箱的 SMTP 服务器地址为: smtp.qq.com
      private static String myEmailSMTPHost = "smtp.qq.com";
     //发件人邮箱
-    private static String myEmailAccount = "924901052@qq.com";
+    private static String myEmailAccount = "@qq.com";
     //发件人邮箱密码（授权码）
     //在开启SMTP服务时会获取到一个授权码，把授权码填在这里
-    private static String myEmailPassword = "uodukdimvpsvbejj";
+    private static String myEmailPassword = "";
     //发送邮件端口
     private static String emialPort="587";
 
